@@ -15,8 +15,8 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
             <div class="container-fluid">
-                <a class="navbar-brand " href="#contenido" id="inicio-link">
-                    <h1>Accesibilidad</h1>
+                <a class="navbar-brand " href="#contenido" id="inicio-link" role="link">
+                    <h1 tabindex="1">Accesibilidad</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +24,10 @@
                 </button>
                 <div class="collapse navbar-collapse ps-5" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html" role="link" tabindex="2">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre-mi" role="link" tabindex="3">Sobre mí</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="#contacto" role="link" tabindex="4">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,13 +45,16 @@
                     <div class="col col-lg-4">
                         <article>
                             <div class="card">
-                                <a href="#" class="btn pb-5 cont-link-noticia">
+                                <a href="#" class="btn pb-5 cont-link-noticia" role="link">
                                     <div>
                                         <img src="noticia1.jpg" class=" img-fluid img-noticia" alt="Imagen Noticia 1">
                                     </div>
                                     <div class="card-body">
-                                        <span class="card-title fs-6 fw-medium">La Unión Europea aprueba la Ley de
-                                            Inteligencia Artificial: un hito histórico en la regulación de la IA</span>
+                                        <h3 class="card-title fs-5 fw-medium" tabindex="6">
+                                            La Unión Europea aprueba la Ley de
+                                            Inteligencia Artificial:
+
+                                        </h3>
                                         <p class="card-text text-break mt-2">La Unión Europea ha aprobado la primera ley
                                             del mundo que regula el uso de la Inteligencia Artificial (IA). Esta ley
                                             clasifica los sistemas de IA según su nivel de riesgo y establece requisitos
@@ -67,12 +70,13 @@
                     <div class="col col-lg-4">
                         <article>
                             <div class="card">
-                                <a href="#" class="btn  pb-5 cont-link-noticia">
+                                <a href="#" class="btn pb-5 cont-link-noticia" role="link">
                                     <img src="noticia2.jpg" class="card-img-top img-fluid img-noticia"
                                         alt="Imagen Noticia 2">
                                     <div class="card-body">
-                                        <span class="card-title fs-6 fw-medium">La escasez global de chips continúa
-                                            afectando a la industria tecnológica y automotriz</span>
+                                        <h3 class="card-title fs-5 fw-medium" tabindex="7">La escasez global de chips
+                                            continúa
+                                            afectando a la industria tecnológica y automotriz</h3>
                                         <p class="card-text text-break mt-2">La escasez de semiconductores, iniciada en
                                             2020, persiste y sigue impactando la producción y los precios de
                                             dispositivos tecnológicos y automóviles. Esta situación, originada por la
@@ -94,8 +98,7 @@
                                             alt="Imagen Noticia 3">
                                     </div>
                                     <div class="card-body">
-                                        <span class="card-title fs-6 fw-medium">El telescopio espacial James Webb
-                                            descubre un exoplaneta con condiciones potencialmente habitables</span>
+                                        <h3 class="card-title fs-5 fw-medium" tabindex="8">El telescopio espacial James Webb descubre un exoplaneta</h3>
                                         <p class="card-text text-break mt-2">El telescopio James Webb ha descubierto un
                                             exoplaneta llamado TOI 700 e, ubicado en la "zona habitable" de su estrella,
                                             lo que sugiere la posible presencia de agua líquida en su superficie. Este
@@ -111,7 +114,7 @@
 
                 <div class="row justify-content-center  text-center">
                     <div class="col-12 col-md-10 col-lg-8">
-                        <h1 class="text-center">Video</h1>
+                        <h2 class="text-center" tabindex="9">Video</h2>
                         <video class="w-100" controls preload="metadata">
                             <source src="video_heidi.mp4" type="video/mp4">
                             <source src="video_accesible.webm" type="video/webm">
@@ -120,7 +123,7 @@
                                 href="video_heidi.mp4">aquí</a>.
                         </video>
                         <p class="fs-4 mt-3">
-                            <a  href="subtitulos.txt" download>Descargar transcripción del video</a>
+                            <a href="subtitulos.txt" role="link" tabindex="10" download>Descargar transcripción del video</a>
                         </p>
 
                     </div>
@@ -131,38 +134,27 @@
                 <div class="vr"></div>
             </div>
             <aside class="col-3 col-lg-2 mt-4" id="registro">
-                <h2>Registro</h2>
-                <p><a href="registro.html">Haz clic aquí para registrarte</a></p>
+                <h2 tabindex="5">Registro</h2>
+                <p><a href="registro.html" role="link">Haz clic aquí para registrarte</a></p>
             </aside>
     </main>
 
 
     <footer>
         <hr>
-        <div class="container-fluid d-flex justify-content-center ">
+        <div class="container-fluid d-flex justify-content-center">
             <ul class="navbar-nav flex-row gap-5">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#inicio-link">Volver al inicio</a>
-
+                    <a class="nav-link active" role="link" aria-current="page" href="#inicio-link" tabindex="11">Volver al inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#" role="link" tabindex="12">Pricing</a>
                 </li>
             </ul>
         </div>
-        <p class="text-center">&copy; 2023 Mi Web Accesible. Todos los derechos reservados.</p>
-
-
-        </div>
-
-
+        <p class="text-center" tabindex="13">&copy; 2023 Mi Web Accesible. Todos los derechos reservados.</p>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
