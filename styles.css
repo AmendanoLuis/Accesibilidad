@@ -1,5 +1,6 @@
+
 .cont-link-noticia{
-    height: 400px; 
+    max-height: 350px; 
 }
 
 .img-noticia{
@@ -7,7 +8,8 @@
     max-height: 150px;
 }
 
-.card-text {
+.card-title,.card-text {
+    padding: 0 !important;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;

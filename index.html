@@ -10,7 +10,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body >
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary shadow" aria-label="Menú principal">
             <div class="container-fluid">
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="#sobre-mi" role="link" tabindex="3">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto" role="link" tabindex="4">Contacto</a>
+                            <a class="nav-link" href="registro.html" role="link" tabindex="4">Registro</a>
                         </li>
                     </ul>
                 </div>
@@ -40,11 +40,11 @@
 
     <main class="container mt-5 mx-auto d-flex justify-content-center" id="contenido">
         <section class="row">
-            <section class="col col-8 col-lg-9 mt-4" id="noticias">
+            <section class="col col-md-8 col-lg-9 mt-4" id="noticias">
                 <div class="row g-3">
 
                     <!-- Noticia 1 -->
-                    <div class="col col-lg-4">
+                    <div class="col-6 col-lg-4">
                         <article>
                             <div class="card">
                                 <a href="#" class="btn pb-5 cont-link-noticia" role="link" tabindex="6">
@@ -67,7 +67,7 @@
                     </div>
 
                     <!-- Noticia 2 -->
-                    <div class="col col-lg-4">
+                    <div class="col-6 col-lg-4">
                         <article>
                             <div class="card">
                                 <a href="#" class="btn pb-5 cont-link-noticia" role="link" tabindex="8">
@@ -89,7 +89,7 @@
                     </div>
 
                     <!-- Noticia 3 -->
-                    <div class="col col-lg-4">
+                    <div class="col-6 col-lg-4">
                         <article>
                             <div class="card">
                                 <a href="#" class="btn pb-5 cont-link-noticia">
@@ -114,10 +114,11 @@
                 </div>
                 <hr class="mt-5 my-4 d-flex align-items-center">
 
+                <!-- Video -->
                 <div class="row justify-content-center text-center">
                     <div class="col-12 col-md-10 col-lg-8">
                         <h2 class="text-center" tabindex="9">Video</h2>
-                        <video class="w-100" controls preload="metadata" aria-describedby="Video de Heidi" poster="portadaHeidi.jpg">
+                        <video class="w-100 rounded shadow-lg" controls preload="metadata" aria-describedby="videoDesc" poster="portadaHeidi.jpg">
                             <source src="video_accesible.mp4" type="video/mp4">
                             <source src="video_accesible.webm" type="video/webm">
                             <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
@@ -132,11 +133,11 @@
 
             </section>
 
-            <div class="d-flex col-1 col-lg-1 d- d-lg-flex justify-content-center" style="height: 75vh;">
+            <div class="d-none d-md-flex col-1 col-lg-1 d- d-lg-flex justify-content-center" style="height: 75vh;">
                 <div class="vr"></div>
             </div>
 
-            <aside class="col-3 col-lg-2 mt-4" id="registro">
+            <aside class="d-none d-md-block col-md-3 col-lg-2 mt-4" id="registro">
                 <h2 tabindex="5">Registro</h2>
                 <p><a href="registro.html" role="link" tabindex="11">Haz clic aquí para registrarte</a></p>
             </aside>
