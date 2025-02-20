@@ -17,22 +17,25 @@
                 <a class="navbar-brand" href="#contenido" id="inicio-link" role="link" tabindex="1">
                     <h1>Accesibilidad</h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse ps-5" id="navbarNav">
+                <div class="navbar-collapse ps-5 collapse" id="navbarNav" style="">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html" role="link" tabindex="2">Inicio</a>
+                            <a class="nav-link" href="/" role="link" tabindex="2">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobre-mi" role="link" tabindex="3">Sobre mí</a>
+                            <a class="nav-link" href="registro.html" role="link" tabindex="3">Registro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registro.html" role="link" tabindex="4">Registro</a>
+                            <a class="nav-link" href="#ayuda" role="link" tabindex="4">Ayuda</a>
                         </li>
                     </ul>
+                    <form class="d-flex ms-auto me-md-auto mt-3 mt-md-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
                 </div>
             </div>
         </nav>
@@ -47,22 +50,13 @@
                     <div class="col-6 col-lg-4">
                         <article>
                             <div class="card">
-
-                                <div>
-                                    <img src="noticia1.jpg" class="img-fluid rounded-top img-noticia"
-                                        alt="Imagen Noticia 1">
-                                </div>
-                                <a href="#" class="btn pb-5 cont-link-noticia" role="link" tabindex="6">
-
+                                <img src="noticia1.jpg" class="img-fluid rounded-top img-noticia"
+                                    alt="Imagen Noticia 1">
+                                <a href="#noticia1" class="btn pb-5 cont-link-noticia" role="link">
                                     <div class="card-body">
-                                        <h3 class="card-title fs-5 fw-medium" tabindex="7">
+                                        <h3 class="card-title fs-5 fw-medium" tabindex="5">
                                             La Unión Europea aprueba la Ley de Inteligencia Artificial
                                         </h3>
-                                        <p class="card-text text-break mt-2">La Unión Europea ha aprobado la primera ley
-                                            del mundo que regula el uso de la Inteligencia Artificial (IA). Esta ley
-                                            clasifica los sistemas de IA según su nivel de riesgo y establece requisitos
-                                            para cada categoría, buscando garantizar un uso seguro y ético de la IA en
-                                            diversos sectores.</p>
                                     </div>
                                 </a>
                             </div>
@@ -75,18 +69,11 @@
                             <div class="card">
                                 <img src="noticia2.jpg" class="img-fluid img-noticia rounded-top"
                                     alt="Imagen Noticia 2">
-                                <a href="#" class="btn pb-5 cont-link-noticia" role="link" tabindex="8">
-
+                                <a href="#noticia2" class="btn pb-5 cont-link-noticia" role="link">
                                     <div class="card-body">
-                                        <h3 class="card-title fs-5 fw-medium">
-                                            La escasez global de chips continúa afectando a la industria tecnológica y
-                                            automotriz
+                                        <h3 class="card-title fs-5 fw-medium" tabindex="6">
+                                            La escasez global de chips continúa afectando a la industria tecnológica
                                         </h3>
-                                        <p class="card-text text-break mt-2">La escasez de semiconductores, iniciada en
-                                            2020, persiste y sigue impactando la producción y los precios de
-                                            dispositivos tecnológicos y automóviles. Esta situación, originada por la
-                                            pandemia y otros factores, plantea desafíos para la industria y los
-                                            consumidores a nivel global.</p>
                                     </div>
                                 </a>
                             </div>
@@ -97,19 +84,13 @@
                     <div class="col-6 col-lg-4">
                         <article>
                             <div class="card">
-                                    <div id="img-noticia">
-                                        <img src="noticia3.jpg" class="img-fluid img-noticia rounded-top"
-                                            alt="Imagen Noticia 3">
-                                    </div>
-                                    <a href="#" class="btn pb-5 cont-link-noticia">
+                                <img src="noticia3.jpg" class="img-fluid img-noticia rounded-top"
+                                    alt="Imagen Noticia 3">
+                                <a href="#noticia3" class="btn pb-5 cont-link-noticia" role="link">
                                     <div class="card-body">
-                                        <h3 class="card-title fs-5 fw-medium">
+                                        <h3 class="card-title fs-5 fw-medium" tabindex="7">
                                             El telescopio espacial James Webb descubre un exoplaneta
                                         </h3>
-                                        <p class="card-text text-break mt-2">El telescopio James Webb ha descubierto un
-                                            exoplaneta llamado TOI 700 e, ubicado en la "zona habitable" de su estrella,
-                                            lo que sugiere la posible presencia de agua líquida en su superficie. Este
-                                            hallazgo abre nuevas perspectivas en la búsqueda de vida extraterrestre.</p>
                                     </div>
                                 </a>
                             </div>
@@ -117,35 +98,33 @@
                     </div>
 
                 </div>
-                <hr class="mt-5 my-4 d-flex align-items-center">
 
                 <!-- Video -->
                 <div class="row justify-content-center text-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <h2 class="text-center" tabindex="9">Video</h2>
+
+                    <div class="col-12 col-md-10 col-lg-8 mt-5">
+
+                        <h2 class="text-center" tabindex="8">Video</h2>
+
                         <video class="w-100 rounded shadow-lg" controls preload="metadata" aria-describedby="videoDesc"
                             poster="portadaHeidi.jpg">
                             <source src="video_accesible_v1.mp4" type="video/mp4">
                             <source src="video_accesible_v1.webm" type="video/webm">
-                            <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
-                            Tu navegador no soporta la reproducción de videos. Por favor, descarga el video <a
-                                href="video_accesible_v1.mp4">aquí</a>.
                         </video>
+
                         <p class="fs-4 mt-3" id="videoDesc">
-                            <a href="subtitulos.txt" role="link" tabindex="10" download>Descargar transcripción del
+                            <a href="subtitulos.txt" role="link" tabindex="9" download>Descargar transcripción del
                                 video</a>
                         </p>
+
                     </div>
                 </div>
-
             </section>
-
-            <div class="d-none d-md-flex col-1 col-lg-1 d- d-lg-flex justify-content-center" style="height: 75vh;">
+            <div class="d-none d-md-flex col-1 col-lg-1 d- d-lg-flex justify-content-center">
                 <div class="vr"></div>
             </div>
-
             <aside class="d-none d-md-block col-md-3 col-lg-2 mt-4" id="registro">
-                <h2 tabindex="5">Registro</h2>
+                <h2 tabindex="10">Registro</h2>
                 <p><a href="registro.html" role="link" tabindex="11">Haz clic aquí para registrarte</a></p>
             </aside>
     </main>
@@ -155,21 +134,21 @@
         <div class="container-fluid d-flex justify-content-center">
             <ul class="navbar-nav flex-row gap-5">
                 <li class="nav-item">
-                    <a class="nav-link active" role="link" aria-current="page" href="#inicio-link" tabindex="12">Volver
-                        al inicio</a>
+                    <a class="nav-link" role="link" aria-current="page" href="#inicio-link" tabindex="12">Volver al
+                        inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="registro.html" role="link" tabindex="4">Registro</a>
+                    <a class="nav-link" href="#contacto" role="link" tabindex="13">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ayuda" role="link" tabindex="14">Ayuda</a>
                 </li>
             </ul>
         </div>
-        <p class="text-center" tabindex="14">&copy; 2023 Mi Web Accesible. Todos los derechos reservados.</p>
+        <p class="text-center" tabindex="15">&copy; 2023 Mi Web Accesible. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
